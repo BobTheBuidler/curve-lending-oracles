@@ -45,4 +45,4 @@ async def get_data_for_block(i):
 
 
   block = await dank_w3.eth.get_block(i)
-  return [i, block['timestamp'], st_yeth_crvusd, eth_crvusd]
+  return [i, block.timestamp, st_yeth_crvusd, eth_crvusd]
