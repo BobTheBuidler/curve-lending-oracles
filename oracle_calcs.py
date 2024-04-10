@@ -43,5 +43,5 @@ async def get_data_for_block(i):
   # 1e18 / 1e18 * 1e18 * 1e8 / 1e8
   st_yeth_crvusd = st_yeth_total_assets / st_yeth_total_supply * yeth_eth_price_oracle * cl_eth_usd / cl_crvusd_usd
 
-block = await dank_w3.eth.get_block(i)
-    return [i, block.timestamp, st_yeth_crvusd]
+  block = await dank_w3.eth.get_block(i)
+  return [i, block.timestamp, st_yeth_crvusd]
