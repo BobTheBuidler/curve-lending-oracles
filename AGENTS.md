@@ -10,4 +10,7 @@ All agents must follow these rules:
 4) PR descriptions must include Summary, Rationale, and Details sections.
 5) If the branch you're assigned to work on is from a remote (ie origin/master or upstream/awesome-feature) you must ensure you fetch and pull from the remote before you begin your work.
 
+6) Run relevant Python tests for changes (pytest/unittest or the repo's configured runner).
+7) Follow formatting/linting configured in pyproject.toml, setup.cfg, tox.ini, or ruff.toml.
+8) Update dependency lockfiles when adding or removing Python dependencies.
 Reference: https://www.conventionalcommits.org/en/v1.0.0/
